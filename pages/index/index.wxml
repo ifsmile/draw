@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="home-wrap">
+  <view class="home-header">
+    <image class="home-header-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <view class="home-header-title">
+      <view>你猜我画</view>
+      <view class="userinfo-nickname">{{userInfo.nickName}}的房间</view>
+    </view>
+    <button wx:if="{{state === 1}}" class="home-invite-btn" bindtap='inviteFrient'>邀请好友</button>
+    <button wx:if="{{state === 2}}" class="home-invite-btn" bindtap="startGame">开始</button>
+  </view>
+  <view class="home-main">
+    <button wx:if="{{state === 0}}" class="home-choose-btn" bindtap='chooseTopic'>选题</button>
+    <text wx:if="{{state === 2}}">{{countDown}}</text>
+  </view>
+</view>

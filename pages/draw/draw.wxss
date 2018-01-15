@@ -1,0 +1,57 @@
+.home-header {
+  background: lightseagreen;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+.home-header-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.home-header-title {
+  font-size: 14px;
+  padding: 0 10px;
+}
+.draw-wrap {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 50vh;
+  border: 1px solid bisque;
+}
+.draw-users {
+  display: flex;
+  padding: 2px 10px;
+  background: darkcyan;
+  color: #fff;
+}
+.draw-users-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.draw-users-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  margin: 2px 0;
+}
+.draw-message-wrap {
+  padding: 10px;
+  display: flex;
+}
+.draw-message-input {
+  flex: 1;
+  padding: 10px;
+   margin-right: 10px; 
+  border: 1px solid #ddd;
+}
+.draw-btn-list {
+  display: flex;
+}
+.draw-btn-icon {
+  width: 25%;
+  text-align: center;
+}

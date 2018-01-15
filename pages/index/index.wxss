@@ -1,0 +1,31 @@
+.home-wrap {
+  background: lightseagreen;
+}
+.home-header {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+.home-header-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.home-header-title {
+  font-size: 14px;
+  padding: 0 10px;
+}
+.home-invite-btn {
+  line-height: 2;
+}
+.home-main {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid bisque;
+}
+.home-choose-btn {
+  width: 30%;
+}

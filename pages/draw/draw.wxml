@@ -1,0 +1,42 @@
+<view>
+  <view class="home-header">
+    <image class="home-header-avatar"
+            src="{{userInfo.avatarUrl}}"
+            background-size="cover"></image>
+    <view class="home-header-title">
+      <view>你猜我画</view>
+      <view class="userinfo-nickname">{{userInfo.nickName}}的房间</view>
+    </view>
+  </view>
+  <canvas canvas-id='draw-canvas'
+          class="draw-wrap"
+          bindtouchstart='touchstart'
+          bindtouchmove='touchmove'
+          bindtouchend='touchend'></canvas>
+  <view class="draw-btn-list">
+    <icon class="draw-btn-icon icon-dot"></icon>
+    <icon class="draw-btn-icon icon-undo"
+          bindtap='revert'></icon>
+    <icon class="draw-btn-icon icon-redo"></icon>
+    <icon class="draw-btn-icon icon-custom-delete"
+          bindtap='clear'></icon>
+  </view>
+  <view class="draw-message-wrap">
+    <input class="draw-message-input"
+          value="{{message}}"
+          bindinput='msgInput'></input>
+    <button class="draw-message-send"
+            bindtap="send">发送</button>
+  </view>
+  <view class="draw-users">
+    <view class="draw-users-item">
+      <text>{{userInfo.nickName}}</text>
+      <image class="draw-users-avatar" src="{{userInfo.avatarUrl}}"></image>
+      <text>2</text>
+    </view>
+    <view class="draw-users-item">
+      <text>111</text>
+      <image class="draw-users-avatar" src="{{userInfo.avatarUrl}}"></image>
+    </view>
+  </view>
+</view>
